@@ -16,7 +16,7 @@ if (PORT == "" || PORT == null)
 const db = knex({
   client: 'pg',
   connection: {
-    host : process.env.DATABASE_URL,
+    connectionString: process.env.DATABASE_URL,
     ssl: true
     // host : 'postgresql-closed-17076',
     // host : '127.0.0.1',
