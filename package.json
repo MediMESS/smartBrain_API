@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +18,8 @@
     "express": "^4.17.1",
     "knex": "^0.19.5",
     "pg": "^7.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
   }
 }
