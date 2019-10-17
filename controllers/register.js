@@ -1,4 +1,4 @@
-const handleRegister => (req, res, db, bcrypt) {
+const handleRegister = (req, res, db, bcrypt) => {
 
     const {name, email, password} = req.body;
     bcrypt.hash(password, 10, function(err, hash) {
@@ -23,6 +23,6 @@ const handleRegister => (req, res, db, bcrypt) {
 
 }
 
-export.modules = {
+module.exports = {
   handleRegister: handleRegister
-}
+};
