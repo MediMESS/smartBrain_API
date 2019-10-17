@@ -27,6 +27,7 @@ const saltRounds = 10;
 
 app.use(bodyParser.json());
 app.use(cors());
+app.get('/', (req,res) => {res.son('WELCOME')})
 
 app.post('/register', (req, res) => {register.handleRegister(req, res, db, bcrypt)} );
 
