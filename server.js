@@ -9,6 +9,9 @@ const register = require('./controllers/register');
 
 const api_clarifai = new Clarifai.App({apiKey: '10d3b6cad7784da888c80248fa4f2bca'});
 
+let PORT = process.env.PORT;
+if (PORT == "" || PORT == NULL)
+  PORT = 3000;
 
 const db = knex({
   client: 'pg',
@@ -91,4 +94,4 @@ app.post('/imageurl', (req, res) => {
   })
 
 
-app.listen(3000);
+app.listen(PORT);
