@@ -10,7 +10,7 @@ const register = require('./controllers/register');
 const api_clarifai = new Clarifai.App({apiKey: '10d3b6cad7784da888c80248fa4f2bca'});
 
 let PORT = process.env.PORT;
-if (PORT == "" || PORT == NULL)
+if (PORT == "" || PORT == null)
   PORT = 3000;
 
 const db = knex({
