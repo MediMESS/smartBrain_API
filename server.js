@@ -16,10 +16,13 @@ if (PORT == "" || PORT == null)
 const db = knex({
   client: 'pg',
   connection: {
-    host : 'postgresql-closed-17076',
-    user : 'postgres',
-    password : 'postgresqlpassword',
-    database : 'smartbrain'
+    host : process.env.DATABASE_URL,
+    ssl: true
+    // host : 'postgresql-closed-17076',
+    // host : '127.0.0.1',
+    // user : 'postgres',
+    // password : 'postgresqlpassword',
+    // database : 'smartbrain'
   }
 });
 
