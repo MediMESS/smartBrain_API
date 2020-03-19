@@ -8,6 +8,6 @@ It's a project i built following along with the course from Udemy. It uses **Rea
 Link: https://smart-brain-ztm2019.herokuapp.com/
 
 ## Installation
-Git clone
-npm install
+Git clone  
+npm install  
 npm start
